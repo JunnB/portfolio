@@ -1,9 +1,5 @@
 const Cv = () => {
-  return (
-    <div>
-      CV page
-    </div>
-  )
+  return <div>CV page</div>
 }
 
 export default Cv

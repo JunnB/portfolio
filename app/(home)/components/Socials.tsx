@@ -1,21 +1,21 @@
-import Link from 'next/link';
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import Link from "next/link"
+import { FaLinkedinIn, FaGithub } from "react-icons/fa"
 
 const socials = [
   {
     icon: FaLinkedinIn,
-    href: 'https://www.linkedin.com/in/junior-bernard-15b96053/',
+    href: "https://www.linkedin.com/in/junior-bernard-15b96053/",
   },
   {
     icon: FaGithub,
-    href: 'https://github.com/JunnB',
+    href: "https://github.com/JunnB",
   },
-];
+]
 
 type SocialsProps = {
-  containerStyles: string;
-  iconStyles: string;
-};
+  containerStyles: string
+  iconStyles: string
+}
 
 const Socials = ({ containerStyles, iconStyles }: SocialsProps) => {
   return (
@@ -31,7 +31,7 @@ const Socials = ({ containerStyles, iconStyles }: SocialsProps) => {
         </Link>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default Socials;
+export default Socials

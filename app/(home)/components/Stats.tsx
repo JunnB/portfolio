@@ -1,5 +1,5 @@
-'use client';
-import CountUp from 'react-countup';
+"use client"
+import CountUp from "react-countup"
 
 const stats = [
   {
@@ -7,18 +7,18 @@ const stats = [
     value: 12,
   },
   {
-    title: 'Missions réalisées',
+    title: "Missions réalisées",
     value: 9,
   },
   {
-    title: 'Technologies masterisées',
+    title: "Technologies masterisées",
     value: 15,
   },
   {
-    title: 'Commits effectués',
+    title: "Commits effectués",
     value: 1689,
   },
-];
+]
 
 const Stats = () => {
   return (
@@ -41,7 +41,7 @@ const Stats = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Stats;
+export default Stats

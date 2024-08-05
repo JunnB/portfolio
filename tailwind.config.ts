@@ -3,11 +3,11 @@ import type { Config } from "tailwindcss"
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -52,11 +52,10 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        
       },
       fontFamily: {
-        primary: ['var(--font-fredoka)', 'sans-serif'],
-        secondary: ['var(--font-happy-monkey)', 'cursive'],
+        primary: ["var(--font-fredoka)", "sans-serif"],
+        secondary: ["var(--font-happy-monkey)", "cursive"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -78,29 +77,41 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage: {
-        'linear-primary-secondary': 'linear-gradient(to right, hsl(var(--primary)), hsl(var(--secondary)))',
-        'linear-primary-accent': 'linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)))',
-        'linear-secondary-accent': 'linear-gradient(to right, hsl(var(--secondary)), hsl(var(--accent)))',
-        'linear-primary-secondary-accent': 'linear-gradient(to right, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)))',
-        'radial-primary-secondary': 'radial-gradient(hsl(var(--primary)), hsl(var(--secondary)))',
-        'radial-primary-accent': 'radial-gradient(hsl(var(--primary)), hsl(var(--accent)))',
-        'radial-secondary-accent': 'radial-gradient(hsl(var(--secondary)), hsl(var(--accent)))',
-        'radial-primary-secondary-accent': 'radial-gradient(hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)))',
+        "linear-primary-secondary":
+          "linear-gradient(to right, hsl(var(--primary)), hsl(var(--secondary)))",
+        "linear-primary-accent":
+          "linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)))",
+        "linear-secondary-accent":
+          "linear-gradient(to right, hsl(var(--secondary)), hsl(var(--accent)))",
+        "linear-primary-secondary-accent":
+          "linear-gradient(to right, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)))",
+        "radial-primary-secondary":
+          "radial-gradient(hsl(var(--primary)), hsl(var(--secondary)))",
+        "radial-primary-accent":
+          "radial-gradient(hsl(var(--primary)), hsl(var(--accent)))",
+        "radial-secondary-accent":
+          "radial-gradient(hsl(var(--secondary)), hsl(var(--accent)))",
+        "radial-primary-secondary-accent":
+          "radial-gradient(hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)))",
       },
     },
   },
   plugins: [
     require("tailwindcss-animate"),
-    function({ addUtilities }: { addUtilities: (utilities: Record<string, any>) => void }) {
+    function ({
+      addUtilities,
+    }: {
+      addUtilities: (utilities: Record<string, any>) => void
+    }) {
       const newUtilities = {
-        '.text-gradient': {
-          'background-clip': 'text',
-          '-webkit-background-clip': 'text',
-          'color': 'transparent',
+        ".text-gradient": {
+          "background-clip": "text",
+          "-webkit-background-clip": "text",
+          color: "transparent",
         },
       }
       addUtilities(newUtilities)
-    }
+    },
   ],
 } satisfies Config
 

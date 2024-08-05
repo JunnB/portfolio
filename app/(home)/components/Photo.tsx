@@ -1,6 +1,6 @@
-'use client';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
+"use client"
+import { motion } from "framer-motion"
+import Image from "next/image"
 
 const Photo = () => {
   return (
@@ -8,14 +8,14 @@ const Photo = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.4, delay: 1, ease: 'easeIn' }}
+        transition={{ duration: 0.4, delay: 1, ease: "easeIn" }}
         className="relative"
       >
         <motion.div
           className="w-[294px] h-[294px] xl:w-[486px] xl:h-[486px] absolute"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.4, delay: 1.4, ease: 'easeInOut' }}
+          transition={{ duration: 0.4, delay: 1.4, ease: "easeInOut" }}
         >
           <Image
             src="/assets/photo-profil.png"
@@ -42,21 +42,21 @@ const Photo = () => {
             strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"
-            initial={{ strokeDasharray: '24 10 0 0' }}
+            initial={{ strokeDasharray: "24 10 0 0" }}
             animate={{
-              strokeDasharray: ['15 120 25 25', '16 25 92 72', '4 250 22 22'],
+              strokeDasharray: ["15 120 25 25", "16 25 92 72", "4 250 22 22"],
               rotate: [120, 360],
             }}
             transition={{
               duration: 20,
               repeat: Infinity,
-              repeatType: 'reverse',
+              repeatType: "reverse",
             }}
           />
         </motion.svg>
       </motion.div>
     </div>
-  );
-};
+  )
+}
 
-export default Photo;
+export default Photo

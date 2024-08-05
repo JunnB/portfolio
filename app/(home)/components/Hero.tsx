@@ -1,8 +1,8 @@
-'use client';
-import Socials from './Socials';
-import Photo from './Photo';
-import Stats from './Stats';
-import DownloadButton from './DownloadButton';
+"use client"
+import Socials from "./Socials"
+import Photo from "./Photo"
+import Stats from "./Stats"
+import DownloadButton from "./DownloadButton"
 
 const Hero = () => {
   return (
@@ -18,8 +18,8 @@ const Hero = () => {
             {/* TODO: Retravailler le texte à partir de ma fiche de poste */}
             <p className="mb-9 max-w-[500px] text-foreground/80">
               Expert en développement web full-stack, je maîtrise la conception
-              et implémentation d'architectures performantes, le recrutement et
-              la gestion de projets complexes.
+              et implémentation d&apos;architectures performantes, le
+              recrutement et la gestion de projets complexes.
             </p>
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
               <DownloadButton />
@@ -38,7 +38,7 @@ const Hero = () => {
       </div>
       <Stats />
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
