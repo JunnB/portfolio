@@ -1,6 +1,6 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
+import MagicButton from "@/components/ui/magic-button"
 import React from "react"
 import { FiDownload } from "react-icons/fi"
 
@@ -15,10 +15,12 @@ const DownloadButton: React.FC = () => {
   }
 
   return (
-    <Button variant="outline" onClick={handleDownload}>
-      <span>Télécharger CV</span>
-      <FiDownload />
-    </Button>
+    <MagicButton onClick={handleDownload} className="h-12">
+      <span className="flex gap-2 items-center justify-center">
+        Télécharger CV
+        <FiDownload />
+      </span>
+    </MagicButton>
   )
 }
 

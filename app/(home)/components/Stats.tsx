@@ -15,7 +15,7 @@ const stats = [
     value: 15,
   },
   {
-    title: "Commits effectués",
+    title: "Commits",
     value: 1689,
   },
 ]
@@ -23,7 +23,7 @@ const stats = [
 const Stats = () => {
   return (
     <section>
-      <div className="container mx-auto">
+      <div className="">
         <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto md:max-w-none">
           {stats.map((stat, index) => (
             <div

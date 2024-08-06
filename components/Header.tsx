@@ -6,7 +6,7 @@ import { ModeToggle } from "./ModeToggle"
 const Header = () => {
   return (
     <header className="py-8 xl:py-12">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="flex justify-between items-center">
         <div className="flex items-center h-full">
           <Link href="/" className="flex items-center font-primary">
             <h1 className="leading-none m-0 font-bold font">
@@ -18,7 +18,9 @@ const Header = () => {
           <Nav />
 
           <Link href="/contact">
-            <Button className="h-full flex items-center">Disponible</Button>
+            <Button className="h-full flex items-center hover:transition-all duration-500 hover:scale-110 hover:shadow-[0_0_10px] hover:shadow-primary">
+              Disponible
+            </Button>
           </Link>
         </div>
         <div className="xl:hidden">
