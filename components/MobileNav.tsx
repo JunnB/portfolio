@@ -7,7 +7,7 @@ import { CiMenuFries } from "react-icons/ci"
 
 const links = [
   { href: "/", label: "Accueil" },
-  { href: "/cv", label: "CV" },
+  { href: "/projets", label: "Projets" },
   { href: "/services", label: "Services" },
   { href: "/experiences", label: "Expériences" },
   { href: "/contact", label: "Contact" },
@@ -24,7 +24,7 @@ const MobileNav = () => {
         <div className="mt-32 mb-40 flex flex-col justify-center items-center gap-8">
           <Link href="/">
             <h1 className="text-4xl font-bold">
-              Junior<span className="text-primary">.</span>
+              Junior Bernard<span className="text-primary">.</span>
             </h1>
           </Link>
         </div>

@@ -36,8 +36,8 @@ const MagicButton: React.FC<MagicButtonProps> = ({
             className={`relative overflow-hidden rounded-full p-[1px] hover:scale-110 hover:shadow-[0_0_10px] hover:shadow-primary transition-all duration-500 ${className}`}
             {...props}
           >
-            <span className="absolute inset-[-1000%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,hsl(var(--primary))_0%,hsl(var(--secondary))_50%,hsl(var(--accent))_100%)]" />
-            <span className="relative inline-flex h-full w-full items-center justify-center rounded-full bg-background px-3 py-1 text-sm font-medium text-primary backdrop-blur-3xl">
+            <span className="absolute inset-[-1000%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,hsl(var(--primary))_0%,hsl(var(--secondary))_50%,hsl(var(--foreground))_100%)]" />
+            <span className="relative inline-flex h-full w-full items-center justify-center rounded-full px-3 py-1 text-sm font-medium text-secondary-foreground bg-primary backdrop-blur-3xl">
               {children}
             </span>
           </Button>

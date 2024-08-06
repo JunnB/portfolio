@@ -53,12 +53,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="min-h-screen bg-gradient-to-b from-primary/5 to-background">
-            <div className="container mx-auto">
-              <Header />
-              <StairTransition />
-              <PageTransition>{children}</PageTransition>
-            </div>
+          <div className="min-h-screen bg-background">
+            <Header />
+            <StairTransition />
+            <PageTransition>{children}</PageTransition>
           </div>
         </ThemeProvider>
       </body>

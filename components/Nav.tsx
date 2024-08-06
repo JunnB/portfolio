@@ -6,8 +6,8 @@ import { ModeToggle } from "./ModeToggle"
 
 const links = [
   { href: "/", label: "Accueil" },
-  { href: "/cv", label: "CV" },
   { href: "/services", label: "Services" },
+  { href: "/projets", label: "Projets" },
   { href: "/experiences", label: "Expériences" },
   { href: "/contact", label: "Contact" },
 ]
